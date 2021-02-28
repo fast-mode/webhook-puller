@@ -36,6 +36,11 @@ bp = APIRouter()
 
 @bp.post("/{target}",description="TODO:拒绝从github以外的来源")
 def read(target:str, data = Body(...)):
+    if len(data) != 0:
+        commit_message = data["commits"][0]["message"]
+        if "-!update-" in commit_message:
+            print("do not update")
+            return
     path = get_rule()[target]
     request = os.popen(f"git -C {path} pull")
     print(request.read())
