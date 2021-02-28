@@ -1,0 +1,14 @@
+
+webhookpuller:
+  name: webhookpuller
+  version: 1
+  has_mdl: False
+  has_sitemap: False
+  route:
+    route_prefix: webhookpuller
+    tags: 
+    - 自动代码更新器
+
+update_rule:
+  brother: /home/applelizihao/my_fastapi
+  blog: /www/wwwroot/test.leesinhao.com/Blog
