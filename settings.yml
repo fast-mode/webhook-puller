@@ -10,5 +10,5 @@ webhookpuller:
     - 自动代码更新器
 
 update_rule:
-  brother: /home/applelizihao/my_fastapi
-  blog: /www/wwwroot/test.leesinhao.com/Blog
+  brother: /home/normidar7/my_fastapi
+  blog: /www/wwwroot/datasview.com/Blog
