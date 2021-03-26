@@ -10,5 +10,5 @@ webhookpuller:
     - 自动代码更新器
 
 update_rule:
-  brother: /home/normidar7/my_fastapi
+  brother: /my_fastapi
   blog: /www/wwwroot/datasview.com/Blog
