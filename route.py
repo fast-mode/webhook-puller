@@ -46,8 +46,8 @@ def read(target:str, data = Body(...)):
     print(request.read())
 
 
-def get_rule():
-    from . import route
-    path = route.__file__[2:-8] + "settings.yml"
-    return settings.load(path)["update_rule"]
+# def get_rule():
+#     from . import route
+#     path = route.__file__[2:-8] + "settings.yml"
+#     return settings.load(path)["update_rule"]
 
